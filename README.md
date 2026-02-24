@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mara River Capital — Website Redesign Case Study
 
-## Getting Started
+This project is a complete redesign and rebuild of the Mara River Capital website.
 
-First, run the development server:
+The original project was developed early in my career based on a desktop-only Adobe XD prototype. While the implementation was pixel-accurate, the project highlighted important gaps in planning, responsive strategy, and communication. This redesign is a deliberate return to that project — applying experience gained over the past few years in architecture, performance optimisation, and system thinking.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This case study represents both technical growth and architectural maturity.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Goals
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Rebuild the website using modern web standards
+- Implement a fully responsive layout (mobile-first approach)
+- Improve UX clarity and content hierarchy
+- Optimise performance for real-world usage
+- Strengthen SEO structure and metadata
+- Extend the visual identity with a custom 3D river concept
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Key Improvements Over Original Version
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. Responsive Architecture
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The original prototype was desktop-only.
+The new implementation is designed mobile-first with adaptive layouts across breakpoints.
 
-## Deploy on Vercel
+### 2. Performance Optimisation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Optimised asset delivery
+- Reduced bundle size
+- Modern image handling
+- Clean component structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. SEO & Metadata Strategy
+
+- Structured metadata per page
+- Improved heading hierarchy
+- Clean semantic markup
+- OpenGraph support for social previews
+
+### 4. 3D River Extension (Conceptual Layer)
+
+Unlike the original static image-based hero section, this redesign introduces a stylised low-poly 3D river environment.
+
+The 3D scene:
+
+- Is inspired by the Mara River ecosystem
+- Uses optimised geometry (reduced from 2.2M vertices to ~98k)
+- Applies instanced vegetation for performance
+- Uses baked lighting and shadows
+- Is designed for WebGL deployment with mobile compatibility
+
+The river serves as a visual metaphor for:
+
+- Flow
+- Strategic direction
+- Capital movement
+- Natural asymmetry
+
+This extension transforms the brand name into a spatial, interactive experience rather than a static background image.
+
+---
+
+## Tech Stack
+
+- Next.js (App Router)
+- React
+- Three.js
+- @react-three/fiber
+- @react-three/drei
+- SCSS
+- Blender (terrain + Geometry Nodes)
+- WebGL (real-time rendering)
+- Baked lighting workflow
+
+---
+
+## Performance Considerations
+
+- Geometry reduced from 2.2M to ~98k vertices
+- Instancing used for vegetation distribution
+- Baked shadows and ambient occlusion
+- Mobile-friendly shader design
+- Minimal draw call strategy
+
+The goal was to balance visual identity with real-time web performance.
+
+---
+
+## What This Project Represents
+
+This redesign is not just aesthetic improvement.
+
+It represents:
+
+- Growth in architectural thinking
+- Improved communication awareness
+- Production-level optimisation discipline
+- Ability to translate abstract brand identity into interactive systems
+
+The project evolved from a static prototype implementation into a performance-aware, system-driven rebuild.
+
+---
+
+## Status
+
+In development / Case Study
+
+---
+
+## Author
+
+Piotr Bania
+Founder — Bespoke Programming

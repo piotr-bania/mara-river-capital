@@ -3,42 +3,28 @@ import './globals.css'
 import './globals.scss'
 
 export const metadata: Metadata = {
-    title: 'Mara River Capital | Asymmetric Equity Investment Firm',
+    title: 'Mara River Capital Redesign Case Study | Piotr Bania',
     description:
-        'Mara River Capital is a Miami-based investment firm specialising in asymmetric, high-potential midcap equities. Built on deep research and risk-aware strategies to deliver uncorrelated returns with controlled volatility.',
+        'A complete redesign and rebuild of the Mara River Capital website focused on modern UI, performance, UX clarity, and SEO optimisation.',
     keywords: [
-        'Mara River Capital',
-        'asymmetric investments',
-        'midcap equities',
-        'investment firm Miami',
-        'capital management',
-        'risk management',
-        'hedge fund strategy',
-        'financial research',
+        'Mara River Capital redesign',
+        'Web design case study',
+        'investment firm website',
+        'UI/UX portfolio',
+        'performance optimisation',
     ],
-    authors: [{ name: 'Mara River Capital Management LLC' }],
-    creator: 'Mara River Capital Management LLC',
     openGraph: {
-        title: 'Mara River Capital - Investment Management Firm',
+        title: 'Mara River Capital Website Redesign – Case Study',
         description:
-            'Explore Mara River Capital’s approach to identifying asymmetric investment opportunities in developed midcap markets with disciplined risk management.',
-        type: 'website',
-        url: 'https://mararivercapital.com/',
+            'Explore the redesign of Mara River Capital’s site with strategic UX improvements, modern SEO, and performance enhancements.',
         images: [
             {
-                url: '/og/marariver-hero.jpg',
+                url: '/og/marariver-redesign.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Mara River Capital investment management overview',
+                alt: 'Mara River Capital redesign preview',
             },
         ],
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: 'Mara River Capital | Asymmetric Investment Firm',
-        description:
-            'Research-driven investment strategies targeting midcap equities with low volatility and uncorrelated returns.',
-        images: ['/og/marariver-hero.jpg'],
     },
 }
 
