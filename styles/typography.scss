@@ -1,0 +1,74 @@
+@use './tokens' as *;
+@use './fluid_sizing' as *;
+
+// Typography
+@font-face {
+    font-family: 'Canela Light';
+    src: url('../public/fonts/Canela/CanelaLight.otf');
+}
+@font-face {
+    font-family: 'RT Rondelle Extra Light';
+    src: url('../public/fonts/RTRondelle/RTRondelleExtralight.otf');
+}
+
+// Font families
+$heading_font: 'Canela Light', serif;
+$paragraph_font: 'RT Rondelle Extra Light', serif;
+
+// Font weights
+$font_light: 300;
+$font_extra_light: 200;
+
+// Defaults
+html,
+body {
+    background-color: $primary;
+    font-family: $paragraph_font;
+    font-weight: $font_light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $secondary;
+    font-family: $heading_font;
+    font-weight: $font_extra_light;
+    line-height: 1.2;
+    z-index: 1;
+}
+
+h1 {
+    font-size: $header_1;
+}
+
+h2 {
+    font-size: $header_2;
+}
+
+h3 {
+    font-size: $header_3;
+}
+
+h4 {
+    font-size: $header_4;
+}
+
+h5 {
+    font-size: $header_5;
+}
+
+h6 {
+    font-size: $header_6;
+}
+
+p {
+    color: $white;
+    font-size: $paragraph;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}

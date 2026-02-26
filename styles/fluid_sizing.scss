@@ -1,0 +1,14 @@
+// Fluid typography
+$link: clamp(0.58rem, 0.44vi + 0.48rem, 0.83rem);
+$paragraph: clamp(0.67rem, 0.58vi + 0.54rem, 1rem);
+$header_6: clamp(0.77rem, 0.75vi + 0.6rem, 1.2rem);
+$header_5: clamp(0.88rem, 0.97vi + 0.67rem, 1.44rem);
+$header_4: clamp(1.01rem, 1.24vi + 0.74rem, 1.73rem);
+$header_3: clamp(1.17rem, 1.57vi + 0.82rem, 2.07rem);
+$header_2: clamp(1.34rem, 1.99vi + 0.9rem, 2.49rem);
+$header_1: clamp(1.54rem, 2.5vi + 0.99rem, 2.99rem);
+
+// Fluid spacing
+$large: clamp(1.25rem, 0.7386rem + 2.2727vw, 2.5rem);
+$medium: clamp(1rem, 0.5909rem + 1.8182vw, 2rem);
+$small: clamp(0.75rem, 0.4432rem + 1.3636vw, 1.5rem);

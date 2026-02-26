@@ -1,8 +1,16 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import './globals.scss'
+import Footer from '@/components/layout/Footer'
+
+const metadataBase = process.env.NEXT_PUBLIC_SITE_URL
+    ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
+    : process.env.VERCEL_URL
+      ? new URL(`https://${process.env.VERCEL_URL}`)
+      : new URL('http://localhost:3000')
 
 export const metadata: Metadata = {
+    metadataBase,
     title: 'Mara River Capital Redesign Case Study | Piotr Bania',
     description:
         'A complete redesign and rebuild of the Mara River Capital website focused on modern UI, performance, UX clarity, and SEO optimisation.',
@@ -28,14 +36,17 @@ export const metadata: Metadata = {
     },
 }
 
-export default function RootLayout({
+export default function Root_Layout({
     children,
 }: {
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
-            <body className="antialiased">{children}</body>
+        <html lang="en" suppressHydrationWarning>
+            <body suppressHydrationWarning>
+                {children}
+                <Footer />
+            </body>
         </html>
     )
 }

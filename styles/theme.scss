@@ -1,0 +1,12 @@
+@use './tokens' as *;
+@use './fluid_sizing' as *;
+
+:root {
+    --large: #{$large};
+    --medium: #{$medium};
+    --small: #{$small};
+
+    --primary: #{$primary};
+    --secondary: #{$secondary};
+    --white: #{$white};
+}

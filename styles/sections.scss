@@ -1,0 +1,60 @@
+@use './tokens' as *;
+@use './fluid_sizing' as *;
+
+section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    padding: $large;
+    gap: $large;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        grid-template-columns: repeat(8, 1fr);
+        padding: $medium;
+        gap: $medium;
+    }
+
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(4, 1fr);
+        padding: $small;
+        gap: $small;
+    }
+}
+
+.section {
+    padding: $large;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding: $medium;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: $small;
+    }
+}
+
+#logo {
+    .logo {
+        position: relative;
+        width: 186.18px;
+        max-width: 30vw;
+        height: auto;
+        z-index: 100;
+    }
+}
+
+#footer {
+    .footer {
+        grid-column: 1 / -1;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+        padding: 0 $large;
+    }
+}

@@ -1,0 +1,69 @@
+@use './fluid_sizing' as *;
+
+// Colors
+$primary: #0d3338;
+$secondary: #afd051;
+$white: #ffffff;
+
+// Font size classes
+.header_1 {
+    font-size: $header_1;
+}
+
+.header_2 {
+    font-size: $header_2;
+}
+
+.header_3 {
+    font-size: $header_3;
+}
+
+.header_4 {
+    font-size: $header_4;
+}
+
+.header_5 {
+    font-size: $header_5;
+}
+
+.header_6 {
+    font-size: $header_6;
+}
+
+.paragraph {
+    font-size: $paragraph;
+}
+
+.link {
+    font-size: $link;
+}
+
+a {
+    color: $secondary;
+}
+
+// Color classes
+.primary {
+    color: $primary;
+}
+
+.secondary {
+    color: $secondary;
+}
+
+.white {
+    color: $white;
+}
+
+// Size classes
+.large {
+    padding: $large;
+}
+
+.medium {
+    padding: $medium;
+}
+
+.small {
+    padding: $small;
+}
